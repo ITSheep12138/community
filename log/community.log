@@ -1,0 +1,25 @@
+11:40:14.365 spring-boot-logging [main] INFO  com.community.CommunityApplication - Starting CommunityApplication using Java 1.8.0_191 on LAPTOP-ISG8S0MR with PID 12412 (D:\studyProject\CommunicationProject\community\target\classes started by 小王子 in D:\studyProject\CommunicationProject\community)
+11:40:14.371 spring-boot-logging [main] INFO  com.community.CommunityApplication - The following profiles are active: dev
+11:40:15.410 spring-boot-logging [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+11:40:15.413 spring-boot-logging [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:40:15.443 spring-boot-logging [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+11:40:16.362 spring-boot-logging [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+11:40:16.374 spring-boot-logging [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+11:40:16.375 spring-boot-logging [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:40:16.375 spring-boot-logging [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.44]
+11:40:16.509 spring-boot-logging [main] INFO  o.a.c.c.C.[.[localhost].[/community] - Initializing Spring embedded WebApplicationContext
+11:40:16.509 spring-boot-logging [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2022 ms
+11:40:19.093 spring-boot-logging [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:40:19.206 spring-boot-logging [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+11:40:19.630 spring-boot-logging [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+11:40:19.797 spring-boot-logging [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+11:40:19.826 spring-boot-logging [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/community'
+11:40:19.829 spring-boot-logging [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [47.110.87.245:5672]
+11:40:20.005 spring-boot-logging [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#c318864:0/SimpleConnection@4780341 [delegate=amqp://guest@47.110.87.245:5672/, localPort= 22230]
+11:40:20.621 spring-boot-logging [main] INFO  com.community.CommunityApplication - Started CommunityApplication in 7.672 seconds (JVM running for 10.26)
+11:40:22.979 spring-boot-logging [scheduling-1] INFO  c.c.c.schedule.DiscussPostSchedule - 【任务取消】 没有需要更新的帖子
+11:45:38.030 spring-boot-logging [SpringContextShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+11:45:38.860 spring-boot-logging [SpringContextShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+11:45:39.666 spring-boot-logging [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+11:45:39.667 spring-boot-logging [SpringContextShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is not active already
+11:45:39.668 spring-boot-logging [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,0 +1,83 @@
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: community
+  # 连接池相关
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://47.110.87.245:3306/community?useSSL=false&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+
+  # redis配置,其他配置采用默认配置即可
+  redis:
+    host: 47.110.87.245
+
+  # rabbitMQ相关配置
+  rabbitmq:
+    host: 47.110.87.245
+    # 下面的配置其实都已经是默认的值。
+    username: guest
+    password: guest
+
+  # elastic search
+
+  # 指定开发环境
+  profiles:
+    active: dev
+
+  # 集成邮件发送系统
+  mail:
+    host: smtp.qq.com
+    username: 3098370874@qq.com
+    password: kkrobopflzindhfe
+    port: 465
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  # 此部分暂无开发
+  elasticsearch:
+    rest:
+      uris: http://localhost:9200
+  cache:
+    type: caffeine
+
+server:
+  port: 8080
+  servlet:
+    context-path: /community
+
+# 数据库操作相关
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.community.bean
+  configuration:
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 开启驼峰命名
+    useGeneratedKeys: true
+    mapUnderscoreToCamelCase: true
+# 日志
+#logging:
+#  level:
+#    com:
+#      community: info
+#  # 日志输出
+#  file:
+#    path: D:\studyProject\CommunicationProject\community\src\main\log
+#    name: info.log
+
+# 自定义参数
+# 假定的域名
+community:
+  path:
+    domain: http://localhost:8080
+    # 文件上传，图片保存位置
+    upload: D:\studyProject\CommunicationProject\imagesForCommunity
+---
+
+
